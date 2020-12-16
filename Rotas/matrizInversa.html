@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaus-Jordan</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="titulo">Bem vindo!, digite o valor das colunas e das linhas, que deseja calcular...</div>
+        <input type="text" id="linhas" placeholder="Digite quantas Linhas">
+        <input type="text" id="colunas" placeholder="Digite quantas Colunas">
+        <button onclick="addNovoInpult()">Gerar Matriz</button>
+        <button onclick="pegarValores()">Salvar valor</button>
+        <button onclick="matrizInversa()">Gerar A matriz inversa</button>
+        
+
+    </div>
+
+    <script src="../JS/transformations.js"></script>
+    <script src="../JS/App.js"></script>
+    <script src="../JS/Matriz.js"></script>
+    <script src="../JS/operMatriz.js"></script>
+    <script src="../JS/vector.js"></script>
+    <script>
+        //Criando o Componente da matriz desejada...
+        var matrizSalva
+        var resultado
+        let la = new LinearAlgebra();
+        
+        function addNovoInpult(){
+            var qntLinhas = document.getElementById("linhas").value;
+            var qntColunas = document.getElementById("colunas").value;
+            for(let i=0; i< qntLinhas; i++){
+                for(let j=0; j< qntColunas; j++){
+                    var classe = "linha"+(i+1)+"coluna"+(j+1);
+                    $("body").append(`<input type="number" id="${classe}">`)
+                    
+            }   
+            $("body").append("<br>")
+        }
+        $("body").append("<br>")
+
+    
+    }
+
+    pegarValores = () => {
+
+            var qntLinhas = document.getElementById("linhas").value;
+            var qntColunas = document.getElementById("colunas").value;
+            var intQlinhas = parseInt(qntLinhas,10) 
+            var intQColunas = parseInt(qntColunas,10)
+            var a = new Matrix(intQlinhas,intQColunas)
+            
+
+            for(let i = 1;i<=qntLinhas;i++){
+                for(let j = 1;j<=qntLinhas;j++){
+                    var valor = document.getElementById(`linha${i}coluna${j}`).value
+                    a.set(i,j,parseInt(valor))
+                }
+            }
+            
+            matrizSalva=a;
+        }
+
+
+         matrizInversa =()=>{
+             //TODO: Fazer uma opção que você escolhe se vai querer a matriz ou só a diagonal principal...
+                var arrayResultado = []
+             resultado = la.inverse(matrizSalva)
+
+             for(let i=1;i<=resultado.rows;i++){
+                arrayResultado.push("[")
+                 for(let j=1;j<=resultado.cols/2;j++){
+                     var teste =  j + resultado.rows
+                    arrayResultado.push(resultado.get(i,teste))
+                 }
+                 arrayResultado.push("]")
+             }
+            
+             $("body").append(`<h1> O resultado da Matriz inversa é igual = ${arrayResultado}</h1>`)
+         }
+        
+
+
+        //fim do script
+    </script>
+</body>
+</html>

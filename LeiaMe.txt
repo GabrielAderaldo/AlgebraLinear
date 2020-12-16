@@ -1,0 +1,26 @@
+Olá professor, Como o senhor está? 
+Sou o aluno Gabriel Aderaldo - Matricula 1710538
+
+Segue nesse WIRAR - todos os arquivos requisitados.
+
+Para acessar as funcionalidades dessa versão do trabalho, basta clicar no arquivo que ta  na pasta chamado: Menu principal. Nele você 
+terá acesso as tres opções requesitadas na documentação.
+
+A opção: Gaus-Jordan irá realizar o metodo de Gaus - Jordan em uma matriz (nxn), qualquer que seja requesitada no front, pelo usuario.
+(A única matriz que o valor é lido é da primeira que for gerada, mas ela pode ser sobrescrita o valor, apertando no botão de "Salvar valor.")
+
+A opção: Determinante irá realizar a determinante em uma matriz (quadrada), qualquer que seja requesitada no front, pelo usuario.
+(A única matriz que o valor é lido é da primeira que for gerada, mas ela pode ser sobrescrita o valor, apertando no botão de "Salvar valor.")
+
+A opção: Matriz inversa irá realizar o metodo de Gaus - Jordan em uma matriz (nx2n), qualquer que seja requesitada no front, pelo usuario,
+depois retornará somente o valor da matriz inversa.
+(A única matriz que o valor é lido é da primeira que for gerada, mas ela pode ser sobrescrita o valor, apertando no botão de "Salvar valor.")
+
+A opção: Tranformações Lineares está sem front-end
+
+Na pasta: Rotas -> Contem todos os arquivos html usados para hospedar o front-End
+
+Na pasta: JS -> Contem todos os arquivos fontes de JavaScript.
+
+Na pasta: CSS -> Contem todos os arquivos fontes de CSS.
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Linear</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <div class="mainContainer">
+    <!--Começo da DIV-->
+    
+        <div class="titulo">
+            Algebra Linear
+        </div>
+
+            <div class="card">
+        <!--Começo da DIV-->
+                    <div class="grafico">
+                        <canvas class="line-chart"></canvas>
+                    </div>
+                <div class="cardButton">
+                    <input type="file">
+                    <button onclick="gerarGrafico()" class="bntGerar">Gerar gráfico</button>
+                </div>
+        <!--Final da DIV-->
+        </div>
+    <!--Final da DIV-->    
+    </div>
+
+
+     
+    <script src="JS/App.js"></script>
+    <script src="JS/Matriz.js"></script>
+    <script src="JS/operMatriz.js"></script>
+    <script src="JS/vector.js"></script>
+    <script src="JS/leituraArquivo.js"></script>
+    <script>
+      
+       la = new LinearAlgebra()
+       //Criando as manipulações...
+        var ctx = document.getElementsByClassName("line-chart");
+   
+        function gerarGrafico(){
+
+            console.log("Gerando gráfico....")
+        var chartGraph = new Chart(ctx,{
+            type: 'line',
+            data:{
+                labels:["ex1","ex2","ex3","ex4","ex4","ex5","ex6","ex7","ex8","ex9","ex10","ex11","ex12","ex13","ex14","ex15","ex16","ex17","ex18","ex19","ex20"],
+                datasets:[{
+                    label: "Tempo de execulção: ",
+                    data:[0.2499999973224476,0.48499999684281647,
+                    4.180000003543682,5.059999995864928,
+                    14.735000004293397, 35.45999999914784,
+                    117.73499999981141, 255.71499999932712,
+                    491.78000000392785, 850.2200000002631,
+                    1346.4899999962654, 2066.0700000007637,
+                    2846.3750000009895, 4114.860000001499,
+                    5227.174999999988, 6827.489999996033,
+                    8923.479999997653, 11202.935000001162,
+                    13346.319999996922, 31490.91999999655],
+                    borderWidth: 6,
+                    borderColor: 'rgba(77,166,253,0.85)',
+                    backgroundColor: 'transparent'
+                }]
+
+            }
+        });
+        }
+
+       
+
+
+    </script>
+   
+</body>
+</html>
