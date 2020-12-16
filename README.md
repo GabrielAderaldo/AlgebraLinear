@@ -17,6 +17,6 @@
 <p>
     A classe matrix, contem 3 contrutores: Rows(Linhas),Cols(Colunas),Values(Valores da matrix): Onde, irá criar o objeto, para ele poder ser manipulado, depois:
     <h1>EXEMPLO: </h1>
-    <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/criandoMatriz.gif"/>
+    <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/gifMatriz.gif"/>
 </p>
 </div>
