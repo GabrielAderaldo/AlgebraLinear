@@ -6,7 +6,7 @@
 * <a href="#matrix">Classe Matrix - Como usar</a> 
 * <a href="#vector">Classe Vector - Como usar</a>  
 * <a href="#LinearAlgebra">Classe Linear Algebra - Como usar</a> 
-* <a href="#tranformation">Classe Transformations - Como usar</a> 
+* <a href="#tranformation">Classe Transformations - Como usar</a> ,
 * <a href="#autor">Autor</a>
 
 <div id="matrix">
@@ -16,6 +16,26 @@
 </p>
 <p>
     A classe matrix, contem 3 contrutores: Rows(Linhas),Cols(Colunas),Values(Valores da matrix): Onde, irá criar o objeto, para ele poder ser manipulado, depois:
+    <h1>EXEMPLO: </h1>
+    <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/gifMatriz.gif"/>
+</p>
+<P>
+    <h1>Metodos da classe:</h1>
+    Essa classe contem três metodos nela: get,set e getIndex: 
+    <ul>
+        <li><a href="#get">Get</a></li>
+        <li><a href="#set">Set</a></li>
+        <li><a href="#getIndex">GetIndex</a></li>
+    </ul>
+</P>
+</div>
+<div id="vector">
+<h1>Classe Vetor</h1>
+<p> 
+    Uma extenção da classe matrix, onde é basicamente um vetor(Tipo de estrutura de dados), que vai ser importante para especificações na hora de transições Lineares. 
+</p>
+<p>
+    A classe Vector, contem 2 contrutores:Dim(),Values(Valores da matrix): Onde, irá criar o objeto, para ele poder ser manipulado, depois:
     <h1>EXEMPLO: </h1>
     <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/gifMatriz.gif"/>
 </p>
