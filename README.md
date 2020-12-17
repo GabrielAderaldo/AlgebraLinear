@@ -46,7 +46,7 @@
 <p id="getIndex">
  O metodo getIndex é para pegar a informação especifica de onde estaria a posição especifica no vetor. Basicamente ultilizamos ela para pegar um valor especifico que fica no vetor(Basicamente seria o mesmo que get - 1)
  <h1>EXEMPLO: </h1>
-    <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/getindex.gif"/>
+    <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/getIndex.gif"/>
 </p>
 
 </div>
