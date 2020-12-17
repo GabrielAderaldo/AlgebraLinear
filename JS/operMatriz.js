@@ -182,11 +182,6 @@ class LinearAlgebra{
             throw "O parametro ultilzado deve ser um carater numerico ou uma matriz..."
         }
 
-
-
-
-
-       
         return c;
 
     //fim do metodo
