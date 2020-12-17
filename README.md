@@ -30,6 +30,7 @@
 </P>
 
 <p id="get">
+<h1>GET</h1>
  O metodo get é para pegar uma informção de dentro da classe. Basicamente ultilizamos ela para pegar um valor especifico que queremos...
  OBS: o valor na matriz começa no 1
  <h1>EXEMPLO: </h1>
@@ -37,6 +38,7 @@
 </p>
 
 <p id="set">
+<h1>SET</h1>
  O metodo set é para jogar uma informção de dentro da classe. Basicamente ultilizamos ela para jogar um valor especifico que queremos...
  OBS: o valor na matriz começa no 1
  <h1>EXEMPLO: </h1>
@@ -44,6 +46,7 @@
 </p>
 
 <p id="getIndex">
+<h1>GET-INDEX</h1>
  O metodo getIndex é para pegar a informação especifica de onde estaria a posição especifica no vetor. Basicamente ultilizamos ela para pegar um valor especifico que fica no vetor(Basicamente seria o mesmo que get - 1)
  <h1>EXEMPLO: </h1>
     <img alt="Como criar uma matriz" title="#Matriz" src="./readMe/getIndex.gif"/>
